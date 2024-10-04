@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "UPDATE identitas SET nama='$nama', alamat='$alamat', tgl_lhr='$tgl_lhr', jk='$jk', email='$email' WHERE npm='$npm'";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php"); // Redirect kembali ke halaman utama setelah berhasil update
+        header("Location: index.php");
         exit();
     } else {
         echo "Error updating record: " . $conn->error;

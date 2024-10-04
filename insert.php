@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$npm', '$nama', '$alamat', '$tgl_lhr', '$jk', '$email')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php"); // Redirect kembali ke halaman utama setelah berhasil insert
+        header("Location: index.php");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

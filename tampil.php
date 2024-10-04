@@ -1,7 +1,6 @@
 <?php
 include 'db_connect.php';
 
-// Query untuk menampilkan data berdasarkan urutan NPM
 $sql = "SELECT * FROM identitas ORDER BY npm ASC";
 $result = $conn->query($sql);
 

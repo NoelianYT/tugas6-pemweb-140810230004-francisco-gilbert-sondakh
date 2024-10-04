@@ -8,8 +8,6 @@
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
-
-    <!-- Form untuk input data mahasiswa -->
     <h2>Form Input Data</h2>
     <form method="POST" action="insert.php">
         <label for="npm">NPM:</label>
@@ -33,7 +31,6 @@
         <input type="submit" value="Submit" class="btn">
     </form>
 
-    <!-- Tabel menampilkan data mahasiswa -->
     <h2>Daftar Mahasiswa</h2>
     <?php include 'tampil.php'; ?>
 </body>
